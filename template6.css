@@ -1,0 +1,290 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+body{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+main{
+    position: relative;
+    background-color: rgba(3, 3, 3, 0.863);
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    line-height:1.5em;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    width: 70%;
+}
+aside{
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(212, 212, 212);
+    color: black;
+}
+aside .about{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px;
+    
+}
+.rs-school{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside .rs-logo{
+    text-align: center;
+}
+aside .icon-bar{
+    padding: 10px;
+}
+aside .icon-bar img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+aside h1{
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+aside li{
+    padding-left: 10%;
+}
+article{
+    background-color: #3d3e42;
+    width: 70%;
+    color: whitesmoke;
+}
+
+.func *{
+    list-style-type: none;
+}
+ .func {
+    max-width: 645px;
+    padding: 30px 25px;
+  }
+   .func:hover > div {
+    transition-duration: 0.3s;
+  }
+   .func:hover > div:hover h3 {
+    letter-spacing: 1.6px;
+  }
+   .func:hover > div:hover h3 i {
+    transform: scale(1.2);
+  }
+   .func:hover > div:not(:hover) {
+    opacity: 0.5;
+  }
+   .func h3 {
+    transition-duration: 0.3s;
+    margin-top: 0;
+  }
+   .func h3 i {
+    color: #fcfcfc;
+    background: #8d9e78;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+  }
+   .func .work,  .func .edu {
+    float: left;
+  }
+   .func .work small,  .func .edu small {
+    display: block;
+    opacity: 0.7;
+  }
+   .func .work ul li,  .func .edu ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+   .func .work ul li:hover::before,  .func .edu ul li:hover::before {
+    animation: circle 1.2s infinite;
+  }
+   .func .work ul li:hover span,  .func .edu ul li:hover span {
+    color: #e07a5f;
+  }
+  @keyframes circle {
+    from {
+      box-shadow: 0 0 0 0px #3d405b;
+    }
+    to {
+      box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+    }
+  }
+   .func .work ul li:first-of-type::before,  .func .edu ul li:first-of-type::before {
+    width: 10px;
+    height: 10px;
+    left: -2px;
+  }
+   .func .work ul li:last-of-type,  .func .edu ul li:last-of-type {
+    padding-bottom: 3px;
+  }
+   .func .work ul li:last-of-type::after,  .func .edu ul li:last-of-type::after {
+    border-radius: 1.5px;
+  }
+   .func .work ul li::before,  .func .work ul li::after,  .func .edu ul li::before,  .func .edu ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+   .func .work ul li::before,  .func .edu ul li::before {
+    width: 7px;
+    height: 7px;
+    border: 3px solid #3d405b;
+    background: #fcfcfc;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+  }
+   .func .work ul li::after,  .func .edu ul li::after {
+    width: 3px;
+    height: 100%;
+    background: #3d405b;
+    left: 5px;
+    top: 0;
+  }
+   .func .work ul li span,  .func .edu ul li span {
+    transition-duration: 0.3s;
+  }
+   .func .work {
+    width: 42%;
+  }
+   .func .edu {
+    width: 58%;
+  }
+   .func .skills-prog {
+    clear: both;
+  }
+   .func .skills-prog ul {
+    margin-left: 15px;
+  }
+   .func .skills-prog ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+  }
+   .func .skills-prog ul li:hover {
+    color: #e07a5f;
+  }
+   .func .skills-prog ul li:hover .skills-bar .bar {
+    background: #e07a5f;
+    box-shadow: 0 0 0 1px #e07a5f;
+  }
+   .func .skills-prog ul li span {
+    display: block;
+    width: 120px;
+  }
+   .func .skills-prog ul li .skills-bar {
+    background: #cdcdcd;
+    height: 2px;
+    width: calc(100% - 120px);
+    position: relative;
+    border-radius: 2px;
+  }
+   .func .skills-prog ul li .skills-bar .bar {
+    position: absolute;
+    top: -1px;
+    height: 4px;
+    background: #8d9e78;
+    box-shadow: 0 0 0 #8d9e78;
+    border-radius: 5px;
+  }
+   .func .skills-soft ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+   .func .skills-soft ul li {
+    position: relative;
+  }
+   .func .skills-soft ul li:hover svg .cbar {
+    stroke: #e07a5f;
+    stroke-width: 4px;
+  }
+   .func .skills-soft ul li:hover span,  .func .skills-soft ul li:hover small {
+    transform: scale(1.2);
+  }
+   .func .skills-soft ul li svg {
+    width: 95%;
+    fill: transparent;
+    transform: rotate(-90deg);
+  }
+   .func .skills-soft ul li svg circle {
+    stroke-width: 1px;
+    stroke: #cdcdcd;
+  }
+   .func .skills-soft ul li svg .cbar {
+    stroke-width: 3px;
+    stroke: #8d9e78;
+    stroke-linecap: round;
+  }
+   .func .skills-soft ul li span,  .func .skills-soft ul li small {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 52%;
+    transition-duration: 0.3s;
+  }
+   .func .skills-soft ul li span {
+    top: 40%;
+  }
+   .func .interests-items {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+   .func .interests-items div {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+   .func .interests-items div:hover i {
+    transform: scale(1.2);
+  }
+   .func .interests-items div:hover span {
+    color: #e07a5f;
+    transition-duration: 0.3s;
+  }
+   .func .interests-items div i {
+    font-size: 45px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #8d9e78;
+    transition-duration: 0.3s;
+  }
+   .func .interests-items div i.guitar {
+    display: block;
+    margin: 0 auto;
+  }
+   .func .interests-items div i.guitar svg {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    fill: #8d9e78;
+  }
+   .func .interests-items div span {
+    display: block;
+  }
+
+  
